@@ -13,7 +13,7 @@ int main(int argc, char const *argv[]){
         inss = sal_bruto * 0.08;
     }
     else
-    if(sal_bruto >= 1693.73 && sal_bruto <= 2822.90)
+    if(sal_bruto >= 1693.73 && sal_bruto <= 28122.90)
     {
         inss = sal_bruto * 0.09;
     }
@@ -25,9 +25,10 @@ int main(int argc, char const *argv[]){
 
     
 
-    sal_liquido = sal_bruto - inss;
+    sal_liquido= inss - sal_bruto;
+
     printf("\n Desconto INSS: %f", inss);
-    printf("\n Salario liquido: %2.f", sal_bruto);
+    printf("\n Salario liquido: %2.f", sal_liquido);
 
     return 0;
     
